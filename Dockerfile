@@ -1,7 +1,7 @@
 FROM centos:latest
 RUN yum install -y httpd \
   zip \
-  unzip
+ unzip
 ADD https://www.free-css.com/free-css-templates/page283/medinova.zip /var/ww/html
 WORKDIR /var/www/html
 RUN unzip medinova.zip
